@@ -141,7 +141,7 @@ The analyzer works by scanning the code for the following patterns:
 
 To use this analyzer in your project:
 
-1. **Set Reference To Main Project:** You can integrate the analyzer into your project via NuGet or by adding it to your code analysis pipeline.
+1. **Set Reference To Main Project:** You can integrate the analyzer into your project by adding it to your code analysis pipeline.
 2. **Run Static Analysis:** Use your IDE’s static code analysis tools or CI/CD pipeline to automatically scan your code for potential thread safety issues with DbContext.
 3. **Review Warnings:** The analyzer will provide warnings whenever it detects unsafe usage patterns or practices that can lead to issues in multi-threaded environments.
 4. **Fix Warnings:** Modify your code to follow safe usage patterns, such as using separate DbContext instances for each parallel task and using DbContextFactory to safely create new instances.
